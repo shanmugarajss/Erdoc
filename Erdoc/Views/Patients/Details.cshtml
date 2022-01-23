@@ -1,0 +1,107 @@
+﻿@model Erdoc.Models.Patient
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dob)
+        </dd>
+
+        @*  <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        @* <dt>
+             @Html.DisplayNameFor(model => model.CreatedDate)
+         </dt>
+
+        <dd>
+             @Html.DisplayFor(model => model.CreatedDate)
+         </dd>
+
+         <dt>
+             @Html.DisplayNameFor(model => model.CreatedByID)
+         </dt>
+
+         <dd>
+             @Html.DisplayFor(model => model.CreatedByID)
+         </dd>
+
+         <dt>
+             @Html.DisplayNameFor(model => model.ModifiedDate)
+         </dt>
+
+         <dd>
+             @Html.DisplayFor(model => model.ModifiedDate)
+         </dd>
+
+         <dt>
+             @Html.DisplayNameFor(model => model.ModifiedByID)
+         </dt>
+
+         <dd>
+             @Html.DisplayFor(model => model.ModifiedByID)
+         </dd>
+
+         <dt>
+             @Html.DisplayNameFor(model => model.IsDeleted)
+         </dt>
+
+         <dd>
+             @Html.DisplayFor(model => model.IsDeleted)
+         </dd>*@
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to Patient List", "Index")
+</p>

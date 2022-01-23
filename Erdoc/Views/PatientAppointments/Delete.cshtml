@@ -1,0 +1,118 @@
+﻿@model Erdoc.Models.PatientAppointment
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/PatientLayout.cshtml";
+}
+
+
+
+
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentDate)
+        </dd>     
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MorningSession)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MorningSession)
+        </dd>
+
+      
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoonSession)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoonSession)
+        </dd>
+
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EveningSession)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EveningSession)
+        </dd>
+
+        
+       
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>      
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor.First_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctor.First_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.First_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.First_name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to Appointment List", "Index")
+        </div>
+    }
+</div>
